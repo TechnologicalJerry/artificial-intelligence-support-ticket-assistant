@@ -1,9 +1,9 @@
 import Fastify from 'fastify';
-import { env } from '@/config/env.js';
-import { registerCommonPlugins } from '@/plugins/common.js';
-import { registerDatabases } from '@/plugins/databases.js';
-import { healthRoute } from '@/routes/health.js';
-import { registerServiceRoutes } from '@/routes/services/index.js';
+import { env } from './config/env.js';
+import { registerCommonPlugins } from './plugins/common.js';
+import { registerDatabases } from './plugins/databases.js';
+import { healthRoute } from './routes/health.js';
+import { registerServiceRoutes } from './routes/services/index.js';
 
 export async function buildApp() {
   const app = Fastify({
