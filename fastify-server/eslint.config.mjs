@@ -12,6 +12,9 @@ export default [
       parserOptions: {
         project: './tsconfig.json',
         sourceType: 'module'
+      },
+      globals: {
+        process: 'readonly'
       }
     },
     plugins: {
