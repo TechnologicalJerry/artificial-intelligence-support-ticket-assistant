@@ -1,5 +1,5 @@
 import mysql from 'mysql2/promise';
-import { env } from '@/config/env.js';
+import { env } from '../config/env.js';
 
 export function createMySqlPool() {
   return mysql.createPool({
